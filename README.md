@@ -71,3 +71,84 @@ If you would like to contribute, please submit a pull request or open an issue. 
 ## License
 
 This project is licensed under the MIT License.
+
+
+-----------------------------------------------------------------------------
+
+
+# ToDoList Web Uygulaması
+
+Bu proje, Django backend ve React frontend kullanılarak geliştirilmiş bir ToDo listesi uygulamasıdır.
+
+## Özellikler
+
+- **Kullanıcı Yönetimi:** Kullanıcılar kaydolabilir, giriş yapabilir ve profillerini yönetebilir.
+- **Kategori Yönetimi:** Görevler kategorilere göre düzenlenebilir.
+- **Görev Yönetimi:** Kullanıcılar görev ekleyebilir, düzenleyebilir ve tamamlanmış olarak işaretleyebilir.
+- **Veritabanı:** Görevler ve kullanıcı verileri SQLite veritabanında saklanır.
+- **Dinamik Menüler:** Kullanıcıya özel görev listeleri ve kategori menüleri dinamik olarak görüntülenir.
+
+## Kurulum
+
+### Gereksinimler
+
+- Python 3.x
+- Node.js
+- Django 3.x veya üzeri
+- React 17.x veya üzeri
+
+### Backend (Django) Kurulumu
+
+1. Gerekli Python paketlerini yükleyin:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Veritabanını migrate edin:
+
+    ```bash
+    python manage.py migrate
+    ```
+
+3. Sunucuyu başlatın:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+### Frontend (React) Kurulumu
+
+1. Gerekli Node.js paketlerini yükleyin:
+
+    ```bash
+    npm install
+    ```
+
+2. React uygulamasını başlatın:
+
+    ```bash
+    npm start
+    ```
+
+## Kullanım
+
+- Backend sunucusu varsayılan olarak `http://localhost:8000/` adresinde çalışır.
+- Frontend uygulaması varsayılan olarak `http://localhost:3000/` adresinde çalışır.
+
+## API Endpoints
+
+- **Kullanıcılar:** `http://localhost:8000/users/`
+- **Kategoriler:** `http://localhost:8000/categories/`
+- **Görevler:** `http://localhost:8000/todos/`
+
+## Katkıda Bulunma
+
+Katkıda bulunmak isterseniz, bir pull request gönderin veya bir sorun bildirisi açın. Tüm katkılar memnuniyetle karşılanır.
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
+
+
+
